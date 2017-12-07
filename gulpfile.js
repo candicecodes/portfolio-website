@@ -1,5 +1,6 @@
 'use strict'
 
+const plumber = require('gulp-plumber');
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const concat = require('gulp-concat');
@@ -10,6 +11,7 @@ const reload = browserSync.reload;
 
 gulp.task('styles', () => {
     return gulp.src('./dev/styles/**/*.scss')
+        .pipe(plumber())
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer('last 2 versions', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'))
         .pipe(concat('style.css'))
