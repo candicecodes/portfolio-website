@@ -12,9 +12,9 @@
     display: flex;
     justify-content: space-between;
     border: 1px solid red;
-    height: 10vh;
     position: fixed;
     width: 100%;
+    background: grey;
     img {
         margin-left: 90px;
     }
@@ -30,6 +30,10 @@
         border: 1px solid red;
         display: flex;
         align-items: center;
+        li {
+            margin-top: 31px;
+            margin-bottom: 31px;
+        }
         li:last-child {
             margin-right: 90px;
         }
@@ -51,6 +55,7 @@
         margin: 0;
         li {
             border: 1px solid red;
+            align-self: flex-end;
         }
     }
 }
@@ -62,4 +67,36 @@
 .header {
     border: 1px solid red;
     padding: 1px;
+    
+}
+
+.header--inner {
+    width: calc(100% - 180px);
+    margin: 90px auto;
+    border: 1px solid blueviolet;
+    height: calc(100vh - 180px);
+    display: flex;
+    .header--left {
+        border: 1px solid yellow;
+        width: 50%;
+        h1 {
+            margin-top: 300px;
+        }
+    }
+    .header--right {
+        border: 1px solid pink;
+    }
+}
+
+.email {
+    background: #26354F;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    i {
+        color: white;
+    }
 }

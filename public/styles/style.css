@@ -46,7 +46,9 @@ li {
       -ms-flex-pack: justify;
           justify-content: space-between;
   border: 1px solid red;
-  height: 10vh; }
+  position: fixed;
+  width: 100%;
+  background: grey; }
   .header--top img {
     margin-left: 90px; }
 
@@ -65,6 +67,9 @@ li {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+    .topNav ul li {
+      margin-top: 31px;
+      margin-bottom: 31px; }
     .topNav ul li:last-child {
       margin-right: 90px; }
     .topNav ul li:not(:last-child) {
@@ -85,7 +90,9 @@ li {
     padding: 0;
     margin: 0; }
     .leftNav ul li {
-      border: 1px solid red; }
+      border: 1px solid red;
+      -ms-flex-item-align: end;
+          align-self: flex-end; }
 
 .downArrow {
   width: 50px; }
@@ -94,11 +101,44 @@ li {
   border: 1px solid red;
   padding: 1px; }
 
+.header--inner {
+  width: calc(100% - 180px);
+  margin: 90px auto;
+  border: 1px solid blueviolet;
+  height: calc(100vh - 180px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .header--inner .header--left {
+    border: 1px solid yellow;
+    width: 50%; }
+    .header--inner .header--left h1 {
+      margin-top: 300px; }
+  .header--inner .header--right {
+    border: 1px solid pink; }
+
+.email {
+  background: #26354F;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .email i {
+    color: white; }
+
 .about img {
   width: 25%; }
 
-html {
-  border: 1px solid red; }
+.about {
+  margin-top: 500px; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
