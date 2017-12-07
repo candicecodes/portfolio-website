@@ -22,5 +22,8 @@ li {
   background: lightcoral;
   display: inline-block; }
 
+.downArrow {
+  width: 50px; }
+
 h1 {
   color: darkcyan; }
