@@ -1,15 +1,65 @@
 .aside {
     height: 100vh;
-    background: yellow;
-    width: 100px;
+    border: 1px solid red;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+
+}
+
+.header--top {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red;
+    height: 10vh;
+    position: fixed;
+    width: 100%;
+    img {
+        margin-left: 90px;
+    }
+}
+
+.topNav {
+    border: 1px solid red;
+    display: flex;
+    //could do space-between for logo and nav?
+    ul {
+        padding: 0;
+        margin: 0;
+        border: 1px solid red;
+        display: flex;
+        align-items: center;
+        li:last-child {
+            margin-right: 90px;
+        }
+        li:not(:last-child) {
+            margin-right: 16px;
+        }
+    }
 }
 
 
 .leftNav {
-    background: lightcoral;
+    border: 1px solid red;
     display: inline-block;
+    ul {
+        border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        li {
+            border: 1px solid red;
+        }
+    }
 }
 
 .downArrow {
     width: 50px;
+}
+
+.header {
+    border: 1px solid red;
+    padding: 1px;
 }
