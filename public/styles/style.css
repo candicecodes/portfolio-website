@@ -1,0 +1,26 @@
+.contentWrapper {
+  max-width: 1000px;
+  background: lightcoral;
+  margin: 0 auto; }
+
+.navWrapper {
+  max-width: 1200px;
+  background: lightblue;
+  margin: 0 auto; }
+
+li {
+  list-style-type: none; }
+  li a {
+    text-decoration: none; }
+
+.aside {
+  height: 100vh;
+  background: yellow;
+  width: 100px; }
+
+.leftNav {
+  background: lightcoral;
+  display: inline-block; }
+
+h1 {
+  color: darkcyan; }

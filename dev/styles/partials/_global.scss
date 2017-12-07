@@ -1,0 +1,23 @@
+// WRAPPERS ==========================
+
+.contentWrapper {
+    max-width: 1000px;
+    background: lightcoral;
+    margin: 0 auto;
+}
+
+.navWrapper {
+    max-width: 1200px;
+    background: lightblue;
+    margin: 0 auto;
+}
+
+// COLOURS ===========================
+
+
+li {
+    list-style-type: none;
+    a {
+        text-decoration: none;
+    }
+}
