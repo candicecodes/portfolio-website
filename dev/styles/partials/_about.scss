@@ -1,7 +1,27 @@
 .about img {
-    width: 25%;
+    max-width: 50%;
+    display: block;
+    margin: 0 auto;
 }
 
-.about {
-    margin-top: 500px;
+// .about {
+//     // margin-top: 500px;
+// }
+
+.about--inner {
+    margin: 0 90px;
+    border: 1px solid green;
+    display:flex;
+    background: #f2f2f2;
+    .about--left, .about--right {
+        width: 50%;
+    }
+    .about--right {
+        h3 {
+            margin-top: 100px;
+        }
+        p {
+            margin-bottom: 100px;
+        }
+    }
 }

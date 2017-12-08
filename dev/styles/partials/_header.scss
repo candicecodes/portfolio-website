@@ -11,23 +11,23 @@
 .header--top {
     display: flex;
     justify-content: space-between;
-    border: 1px solid red;
     position: fixed;
     width: 100%;
     background: grey;
+    z-index: 1;
     img {
         margin-left: 90px;
     }
 }
 
 .topNav {
-    border: 1px solid red;
     display: flex;
+    font-family: $secondaryFont;
+    text-transform: uppercase;
     //could do space-between for logo and nav?
     ul {
         padding: 0;
         margin: 0;
-        border: 1px solid red;
         display: flex;
         align-items: center;
         li {
@@ -57,6 +57,11 @@
         li {
             border: 1px solid red;
             align-self: flex-end;
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+        li:last-child {
+            margin-bottom: 90px;
         }
     }
 }
@@ -68,15 +73,18 @@
 .header {
     border: 1px solid red;
     padding: 1px;
+    // height: calc(100vh - 180px);
+    position: relative;
+    
     
 }
 
 .header--inner {
     width: calc(100% - 180px);
     margin: 90px auto;
-    border: 1px solid blueviolet;
     height: calc(100vh - 180px);
     display: flex;
+    font-family: $secondaryFont;
     .header--left {
         border: 1px solid yellow;
         width: 50%;
@@ -110,4 +118,11 @@
         color: white;
         font-size: 24px;
     }
+}
+
+.belowFold {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
 }

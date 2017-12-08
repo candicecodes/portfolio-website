@@ -177,22 +177,22 @@ li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border: 1px solid red;
   position: fixed;
   width: 100%;
-  background: grey; }
+  background: grey;
+  z-index: 1; }
   .header--top img {
     margin-left: 90px; }
 
 .topNav {
-  border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase; }
   .topNav ul {
     padding: 0;
     margin: 0;
-    border: 1px solid red;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -229,23 +229,28 @@ li {
     .leftNav ul li {
       border: 1px solid red;
       -ms-flex-item-align: end;
-          align-self: flex-end; }
+          align-self: flex-end;
+      margin-bottom: 20px;
+      font-size: 30px; }
+    .leftNav ul li:last-child {
+      margin-bottom: 90px; }
 
 .downArrow {
   width: 50px; }
 
 .header {
   border: 1px solid red;
-  padding: 1px; }
+  padding: 1px;
+  position: relative; }
 
 .header--inner {
   width: calc(100% - 180px);
   margin: 90px auto;
-  border: 1px solid blueviolet;
   height: calc(100vh - 180px);
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  font-family: "Roboto", sans-serif; }
   .header--inner .header--left {
     border: 1px solid yellow;
     width: 50%;
@@ -290,8 +295,34 @@ li {
     color: white;
     font-size: 24px; }
 
-.about img {
-  width: 25%; }
+.belowFold {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 0; }
 
-.about {
-  margin-top: 500px; }
+.about img {
+  max-width: 50%;
+  display: block;
+  margin: 0 auto; }
+
+.about--inner {
+  margin: 0 90px;
+  border: 1px solid green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #f2f2f2; }
+  .about--inner .about--left, .about--inner .about--right {
+    width: 50%; }
+  .about--inner .about--right h3 {
+    margin-top: 100px; }
+  .about--inner .about--right p {
+    margin-bottom: 100px; }
+
+.portfolio {
+  border: 1px solid blue; }
+
+.portfolio__container {
+  border: 1px solid pink; }
