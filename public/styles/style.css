@@ -165,8 +165,7 @@ a {
   text-decoration: none; }
 
 .aside {
-  height: 100vh;
-  border: 1px solid red;
+  height: calc(100vh - 90px);
   width: 90px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -185,8 +184,9 @@ a {
           justify-content: space-between;
   position: fixed;
   width: 100%;
-  background: grey;
-  z-index: 1; }
+  background: white;
+  z-index: 1;
+  top: 0; }
   .header--top img {
     margin-left: 90px; }
 
@@ -216,7 +216,6 @@ a {
       margin-right: 16px; }
 
 .leftNav {
-  border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -224,7 +223,6 @@ a {
       -ms-flex-align: end;
           align-items: flex-end; }
   .leftNav ul {
-    border: 1px solid red;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -235,7 +233,6 @@ a {
     padding: 0;
     margin: 0; }
     .leftNav ul li {
-      border: 1px solid red;
       -ms-flex-item-align: end;
           align-self: flex-end;
       margin-bottom: 20px;
@@ -249,7 +246,6 @@ a {
   width: 50px; }
 
 .header {
-  padding: 1px;
   position: relative; }
 
 .header--inner {
@@ -261,7 +257,7 @@ a {
   display: flex;
   font-family: "Roboto", sans-serif; }
   .header--inner .header--left {
-    border: 1px solid yellow;
+    background: blue;
     width: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -318,7 +314,6 @@ a {
 
 .about--inner {
   margin: 0 90px;
-  border: 1px solid green;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -331,11 +326,10 @@ a {
     margin-bottom: 100px; }
 
 .portfolio {
-  border: 1px solid blue;
-  margin: 90px 90px 0 90px; }
+  margin: 90px 90px 0 90px;
+  background: #f2f2f2; }
 
 .portfolio__container {
-  border: 1px solid pink;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
@@ -351,17 +345,24 @@ a {
   display: -ms-flexbox;
   display: flex; }
   .contact input, .contact button, .contact textarea {
-    display: block;
-    margin: 10px auto; }
+    display: block; }
   .contact h3 {
-    color: white; }
+    color: white;
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    letter-spacing: 1px; }
   .contact .contact--left {
     width: 55%;
     margin: 0 auto;
     background: #262626; }
+  .contact .contact__wrapper {
+    margin: 0 auto; }
   .contact .contact--right {
     width: 45%;
-    background: #3f3f3f; }
+    background: #3f3f3f;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
 
 .social {
   -webkit-box-pack: center;
@@ -380,3 +381,9 @@ a {
   .icon__wrapper i {
     font-size: 30px;
     color: white; }
+
+.contact--left button {
+  background: #48F2D3;
+  border: none;
+  text-transform: uppercase;
+  padding: 10px 40px; }

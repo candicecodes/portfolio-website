@@ -4,20 +4,31 @@
     background: #f2f2f2;
     display: flex;
     input, button, textarea {
+        border: none;
         display: block;
-        margin: 10px auto;
+        // margin: 10px auto;
     }
     h3 {
         color: white;
+        font-family: $primaryFont;
+        font-size: 30px;
+        letter-spacing: 1px;
     }
     .contact--left {
         width: 55%;
         margin: 0 auto;
         background: #262626;
     }
+
+    .contact__wrapper {
+        margin: 0 auto;
+        // justify-content: center;
+    }
+
     .contact--right {
         width: 45%;
         background: #3f3f3f;
+        justify-content: center;
     }
 }
 
@@ -37,4 +48,13 @@
         color: white;
     }
     
+}
+
+.contact--left {
+    button {
+        background: #48F2D3;
+        border: none;
+        text-transform: uppercase;
+        padding: 10px 40px;
+    }
 }
