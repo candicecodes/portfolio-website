@@ -27,6 +27,12 @@
     overflow: hidden;
 }
 
+//GLOBAL CLASSES =====================
+
+.flex {
+    display: flex;
+}
+
 // COLOURS ===========================
 
 
@@ -38,7 +44,8 @@ $secondaryFont: 'Roboto', sans-serif;
 
 li {
     list-style-type: none;
-    a {
+}
+
+a {
         text-decoration: none;
-    }
 }

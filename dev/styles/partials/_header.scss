@@ -31,8 +31,11 @@
         display: flex;
         align-items: center;
         li {
-            margin-top: 31px;
-            margin-bottom: 31px;
+            margin-top: 35.5px;
+            margin-bottom: 35.5px;
+            a {
+                color: #26354F;
+            }
         }
         li:last-child {
             margin-right: 90px;
@@ -59,6 +62,9 @@
             align-self: flex-end;
             margin-bottom: 20px;
             font-size: 30px;
+            a {
+                color: #26354F;
+            }
         }
         li:last-child {
             margin-bottom: 90px;
@@ -71,7 +77,6 @@
 }
 
 .header {
-    border: 1px solid red;
     padding: 1px;
     // height: calc(100vh - 180px);
     position: relative;
@@ -111,9 +116,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    bottom: 20px;
-    right: -30px;
+    // position: absolute;
+    // bottom: 20px;
+    // right: -30px;
+    position: fixed;
+    bottom: 100px;
+    right: 65px;
     i {
         color: white;
         font-size: 24px;

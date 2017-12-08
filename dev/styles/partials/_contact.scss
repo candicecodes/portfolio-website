@@ -1,0 +1,40 @@
+.contact {
+    margin: 90px;
+    // padding: 30px;
+    background: #f2f2f2;
+    display: flex;
+    input, button, textarea {
+        display: block;
+        margin: 10px auto;
+    }
+    h3 {
+        color: white;
+    }
+    .contact--left {
+        width: 55%;
+        margin: 0 auto;
+        background: #262626;
+    }
+    .contact--right {
+        width: 45%;
+        background: #3f3f3f;
+    }
+}
+
+.social {
+    justify-content: center;
+    :not(:last-child) {
+        margin-right:30px;
+    }
+}
+
+.icon__wrapper {
+    
+    justify-content: center;
+    align-items: center;
+    i {
+        font-size: 30px;
+        color: white;
+    }
+    
+}
