@@ -345,6 +345,8 @@ a {
   display: -ms-flexbox;
   display: flex; }
   .contact input, .contact button, .contact textarea {
+    border: none;
+    border-bottom: 2px solid #48F2D3;
     display: block; }
   .contact h3 {
     color: white;
