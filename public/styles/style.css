@@ -194,7 +194,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: "Roboto", sans-serif;
+  font-family: "Muli", sans-serif;
   text-transform: uppercase; }
   .topNav ul {
     padding: 0;
@@ -246,6 +246,7 @@ a {
   width: 50px; }
 
 .header {
+  height: calc(100vh - 90px);
   position: relative; }
 
 .header--inner {
@@ -255,9 +256,11 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Muli", sans-serif; }
   .header--inner .header--left {
-    background: blue;
+    background: url("../../assets/header_left.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -275,7 +278,9 @@ a {
     .header--inner .header--left h3 {
       padding-right: 80px; }
   .header--inner .header--right {
-    background: #66DDBB;
+    background: url("../../assets/header_right.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 50%;
     position: relative; }
 
@@ -334,6 +339,9 @@ a {
   display: -ms-flexbox;
   display: flex; }
 
+.portfolio--description, .portfolio--image {
+  width: 50%; }
+
 .skills {
   margin: 90px 90px 0 90px;
   background: #f2f2f2; }
@@ -347,10 +355,11 @@ a {
   .contact input, .contact button, .contact textarea {
     border: none;
     border-bottom: 2px solid #48F2D3;
+    background: #262626;
     display: block; }
   .contact h3 {
     color: white;
-    font-family: "Playfair Display", serif;
+    font-family: "Muli", sans-serif;
     font-size: 30px;
     letter-spacing: 1px; }
   .contact .contact--left {
@@ -365,6 +374,8 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
+    .contact .contact--right p {
+      display: inline; }
 
 .social {
   -webkit-box-pack: center;

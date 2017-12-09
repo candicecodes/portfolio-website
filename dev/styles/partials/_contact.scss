@@ -6,6 +6,7 @@
     input, button, textarea {
         border: none;
         border-bottom: 2px solid #48F2D3;
+        background: #262626;
         display: block;
         // margin: 10px auto;
     }
@@ -30,6 +31,9 @@
         width: 45%;
         background: #3f3f3f;
         justify-content: center;
+        p {
+            display: inline;
+        }
     }
 }
 
