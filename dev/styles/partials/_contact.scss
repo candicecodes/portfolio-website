@@ -8,10 +8,12 @@
         border-bottom: 2px solid #48F2D3;
         background: #262626;
         display: block;
+        width: 100%;
         // margin: 10px auto;
+        margin-bottom: 20px;
     }
     h3 {
-        color: white;
+        color: $fontColour;
         font-family: $primaryFont;
         font-size: 30px;
         letter-spacing: 1px;
@@ -19,7 +21,7 @@
     .contact--left {
         width: 55%;
         margin: 0 auto;
-        background: #262626;
+        background: $aboutSection;
     }
 
     .contact__wrapper {
@@ -29,7 +31,7 @@
 
     .contact--right {
         width: 45%;
-        background: #3f3f3f;
+        background: $portfolioSection;
         justify-content: center;
         p {
             display: inline;

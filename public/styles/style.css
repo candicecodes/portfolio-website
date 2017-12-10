@@ -188,7 +188,7 @@ a {
   z-index: 1;
   top: 0; }
   .header--top img {
-    margin-left: 90px; }
+    margin: 20px; }
 
 .topNav {
   display: -webkit-box;
@@ -209,7 +209,7 @@ a {
       margin-top: 35.5px;
       margin-bottom: 35.5px; }
       .topNav ul li a {
-        color: #26354F; }
+        color: #5b5b5b; }
     .topNav ul li:last-child {
       margin-right: 90px; }
     .topNav ul li:not(:last-child) {
@@ -238,7 +238,7 @@ a {
       margin-bottom: 20px;
       font-size: 30px; }
       .leftNav ul li a {
-        color: #26354F; }
+        color: #5b5b5b; }
     .leftNav ul li:last-child {
       margin-bottom: 90px; }
 
@@ -285,7 +285,7 @@ a {
     position: relative; }
 
 .email {
-  background: #26354F;
+  background: #5b5b5b;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -322,7 +322,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: #f2f2f2; }
+  background: #dbfaff; }
   .about--inner .about--left, .about--inner .about--right {
     width: 50%; }
   .about--inner .about--right h3 {
@@ -332,7 +332,7 @@ a {
 
 .portfolio {
   margin: 90px 90px 0 90px;
-  background: #f2f2f2; }
+  background: #d3ffee; }
 
 .portfolio__container {
   display: -webkit-box;
@@ -356,21 +356,23 @@ a {
     border: none;
     border-bottom: 2px solid #48F2D3;
     background: #262626;
-    display: block; }
+    display: block;
+    width: 100%;
+    margin-bottom: 20px; }
   .contact h3 {
-    color: white;
+    color: #5b5b5b;
     font-family: "Muli", sans-serif;
     font-size: 30px;
     letter-spacing: 1px; }
   .contact .contact--left {
     width: 55%;
     margin: 0 auto;
-    background: #262626; }
+    background: #dbfaff; }
   .contact .contact__wrapper {
     margin: 0 auto; }
   .contact .contact--right {
     width: 45%;
-    background: #3f3f3f;
+    background: #d3ffee;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }

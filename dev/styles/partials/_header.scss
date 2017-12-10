@@ -12,12 +12,11 @@
     justify-content: space-between;
     position: fixed;
     width: 100%;
-    // background: grey;
     background: white;
     z-index: 1;
     top: 0;
     img {
-        margin-left: 90px;
+        margin: 20px;
     }
 }
 
@@ -36,7 +35,7 @@
             margin-top: 35.5px;
             margin-bottom: 35.5px;
             a {
-                color: #26354F;
+                color: $fontColour;
             }
         }
         li:last-child {
@@ -65,7 +64,7 @@
             margin-bottom: 20px;
             font-size: 30px;
             a {
-                color: #26354F;
+                color: $fontColour;
             }
         }
         li:last-child {
@@ -113,7 +112,7 @@
 }
 
 .email {
-    background: #26354F;
+    background: $fontColour;
     border-radius: 50%;
     width: 60px;
     height: 60px;

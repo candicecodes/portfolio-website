@@ -18,7 +18,7 @@
         <!-- remove navWrapper? -->
         <!-- possiblly move navs outside of header since they need to be fixed? -->
             <div class="header--top">
-                <img src="https://dummyimage.com/60x60/000/fff&text=logo" alt="">
+                <img src="../../assets/cm_logo.png" alt="">
                 <nav class="topNav">
                     <ul>
                         <li><a href="#">About</a></li>
@@ -66,15 +66,15 @@
                 </div>               
             </div>
                        
-            <a href="#" class="belowFold"><img src="assets/noun_arrow.svg" class="downArrow" alt=""></a>
+            <a href="#about" class="belowFold"><img src="assets/noun_arrow.svg" class="downArrow" alt=""></a>
     </header>
 
 <!-- ABOUT ========================== -->
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="about--inner">
             <div class="about--left">
-                <img src="assets/headshot.jpg" alt="">
+                <img src="assets/headshot1.jpg" alt="">
             </div>
             <div class="about--right">
                 <h3>My name is Candice, and I'm a web developer based in Toronto.</h3>
@@ -173,7 +173,7 @@
                     <label class="visuallyhidden" for="subject">Subject</label>
                     <input type="text" id="subject">
                     <label for="message"></label>
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <textarea name="message" id="message" rows="5"></textarea>
                     <button>Submit</button>
                 </form>            
             </div>        
@@ -214,8 +214,15 @@
         </div>
     </footer>
 
-    
-
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+    <script src="dev/scripts/smooth-scroll.js"></script>
     <script src="https://use.fontawesome.com/7a2cc63db2.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#about"]', {
+            speed: 5000,
+            easing: 'easeInOutCubic',
+            header: '[.header--top]'
+        });
+    </script>
 </body>
 </html>
