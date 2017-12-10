@@ -34,8 +34,19 @@
         li {
             margin-top: 35.5px;
             margin-bottom: 35.5px;
+            position: relative;
+            
             a {
                 color: $fontColour;
+                transition: all .2s ease-in-out;
+                &:hover::before {
+                content: '';
+                height: 2px;
+                width: 100%;
+                bottom: -2px;
+                background: $contactSectionTwo;
+                position: absolute;
+            }
             }
         }
         li:last-child {
@@ -65,6 +76,10 @@
             font-size: 30px;
             a {
                 color: $fontColour;
+                transition: all .2s ease-in-out;
+                &:hover {
+                    color: $contactSectionTwo;
+                }
             }
         }
         li:last-child {
@@ -125,6 +140,13 @@
     position: fixed;
     bottom: 100px;
     right: 65px;
+    transition: all .2s ease-in-out;
+    a {
+        padding: 16px;
+        &:hover {
+            color: $contactSectionTwo;
+        }
+    }
     i {
         color: white;
         font-size: 24px;

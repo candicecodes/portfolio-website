@@ -164,6 +164,9 @@ li {
 a {
   text-decoration: none; }
 
+img {
+  max-width: 100%; }
+
 .aside {
   height: calc(100vh - 90px);
   width: 90px;
@@ -207,9 +210,19 @@ a {
             align-items: center; }
     .topNav ul li {
       margin-top: 35.5px;
-      margin-bottom: 35.5px; }
+      margin-bottom: 35.5px;
+      position: relative; }
       .topNav ul li a {
-        color: #5b5b5b; }
+        color: #5b5b5b;
+        -webkit-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out; }
+        .topNav ul li a:hover::before {
+          content: '';
+          height: 2px;
+          width: 100%;
+          bottom: -2px;
+          background: #8affe1;
+          position: absolute; }
     .topNav ul li:last-child {
       margin-right: 90px; }
     .topNav ul li:not(:last-child) {
@@ -238,7 +251,11 @@ a {
       margin-bottom: 20px;
       font-size: 30px; }
       .leftNav ul li a {
-        color: #5b5b5b; }
+        color: #5b5b5b;
+        -webkit-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out; }
+        .leftNav ul li a:hover {
+          color: #8affe1; }
     .leftNav ul li:last-child {
       margin-bottom: 90px; }
 
@@ -300,7 +317,13 @@ a {
           justify-content: center;
   position: fixed;
   bottom: 100px;
-  right: 65px; }
+  right: 65px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out; }
+  .email a {
+    padding: 16px; }
+    .email a:hover {
+      color: #8affe1; }
   .email i {
     color: white;
     font-size: 24px; }
@@ -355,7 +378,7 @@ a {
   .contact input, .contact button, .contact textarea {
     border: none;
     border-bottom: 2px solid #48F2D3;
-    background: #262626;
+    background: #dbfaff;
     display: block;
     width: 100%;
     margin-bottom: 20px; }

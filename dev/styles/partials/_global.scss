@@ -43,10 +43,6 @@ $contactSectionTwo: #8affe1;
 
 // $portfolioSection: #ecfbff;
 
-
-
-
-
 // FONTS ============================= 
 
 $primaryFont: 'Muli', sans-serif;
@@ -59,4 +55,8 @@ li {
 
 a {
         text-decoration: none;
+}
+
+img {
+    max-width: 100%;
 }
