@@ -60,9 +60,12 @@
                     <h3>Web developer</h3>
                 </div>
                 <div class="header--right">        
-                    <div class="email">
+                    <!-- <div class="email">
                         <a href=""><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
-                    </div>                    
+                    </div>                     -->
+                    <a href="" class="email">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    </a>
                 </div>               
             </div>
                        
@@ -209,19 +212,19 @@
                         </a>
                     </div>
 
-            <!-- </div> -->
             </div>
         </div>
     </footer>
 
     <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
-    <script src="dev/scripts/smooth-scroll.js"></script>
+    <!-- <script src="dev/scripts/smooth-scroll.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.js"></script>
     <script src="https://use.fontawesome.com/7a2cc63db2.js"></script>
     <script>
         var scroll = new SmoothScroll('a[href*="#about"]', {
             speed: 5000,
-            easing: 'easeInOutCubic',
-            header: '[.header--top]'
+            easing: 'easeInOutCubic'
+            // header: '[.header--top]'
         });
     </script>
 </body>

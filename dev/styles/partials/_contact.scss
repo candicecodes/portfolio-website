@@ -17,6 +17,7 @@
         font-family: $primaryFont;
         font-size: 30px;
         letter-spacing: 1px;
+        margin-top: 50px;
     }
     .contact--left {
         width: 55%;
@@ -36,13 +37,30 @@
         p {
             display: inline;
         }
+        h3 {
+            margin-top: 80px;
+        }
+    }
+    .contact--right--location, .contact--right--email {
+        margin-bottom: 20px;
+    }
+
+    .contact--right--connect {
+        margin-top: 70px;
+        display: block;
+    }
+
+    .fa-map-o, .fa-envelope {
+        color: $octagonOrange;
+        margin-right: 10px;
     }
 }
 
 .social {
     justify-content: center;
+    margin-top: 30px;
     :not(:last-child) {
-        margin-right:30px;
+        margin-right:20px;
     }
 }
 
@@ -52,7 +70,7 @@
     align-items: center;
     i {
         font-size: 30px;
-        color: white;
+        color: $octagonOrange;
     }
     
 }
