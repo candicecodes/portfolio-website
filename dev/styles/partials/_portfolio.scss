@@ -2,11 +2,21 @@
     // border: 1px solid blue;
     margin: 90px 90px 0 90px;
     background: $portfolioSection;
+    padding: 50px;
+    
 }
 
 .portfolio__container {
     // border: 1px solid pink;
     display: flex;
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+    h3 {
+        font-family: $primaryFont;
+        color: $fontColour;
+        
+    }
 }
 
 .portfolio--description, .portfolio--image {

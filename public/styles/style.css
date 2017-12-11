@@ -366,12 +366,18 @@ img {
 
 .portfolio {
   margin: 90px 90px 0 90px;
-  background: #d3ffee; }
+  background: #d3ffee;
+  padding: 50px; }
 
 .portfolio__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  .portfolio__container:not(:last-child) {
+    margin-bottom: 30px; }
+  .portfolio__container h3 {
+    font-family: "Muli", sans-serif;
+    color: #5b5b5b; }
 
 .portfolio--description, .portfolio--image {
   width: 50%; }
