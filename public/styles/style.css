@@ -380,11 +380,17 @@ img {
   padding: 50px;
   background: #fff9db; }
 
-.skills--right {
+.skills__list {
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-  .skills--right .skills__tool {
-    width: calc(100% / 4); }
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .skills__list .skills__tool {
+    width: 25%; }
+    .skills__list .skills__tool p {
+      text-align: center;
+      font-family: "Muli", sans-serif; }
 
 .contact {
   margin: 90px;

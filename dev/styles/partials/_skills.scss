@@ -2,14 +2,23 @@
     margin: 90px 90px 0 90px;
     padding: 50px;
     background: $skillsSection;
-    
+    // flex-wrap: wrap;
 }
 
-.skills--right {
+.skills__list {
     flex-wrap: wrap;
+    justify-content: space-between;
     .skills__tool {
-        width: calc(100% / 4);
+        // width: calc(100% / 4 - 100px);
+        // margin: 50px;
+        width: 25%;
+        // padding: 20px;
+        p {
+            text-align: center;
+            font-family: $primaryFont;
+        }
     }
+
 }
 
 
