@@ -286,6 +286,7 @@ img {
     background: url("../../assets/header_left.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: bottom;
     width: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -390,7 +391,7 @@ img {
     width: 25%; }
     .skills__list .skills__tool p {
       text-align: center;
-      font-family: "Muli", sans-serif; }
+      font-family: "Playfair Display", serif; }
 
 .contact {
   margin: 90px;

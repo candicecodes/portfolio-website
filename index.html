@@ -22,10 +22,10 @@
                 <img src="../../assets/cm_logo_2.png" alt="">
                 <nav class="topNav">
                     <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Skills</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -92,7 +92,7 @@
 
 <!-- PORTFOLIO ====================== -->
 
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <!-- maybe use grids? -->
         <div class="portfolio__container">
             <div class="portfolio--image">
@@ -145,7 +145,7 @@
 
 <!-- SKILLS ========================= -->
 
-    <section class="skills">
+    <section class="skills" id="skills">
         <h3>The tools I use:</h3>
         
         <ul class="skills__list flex">
@@ -171,7 +171,7 @@
             </li>
             <li class="skills__tool">
                 <img src="assets/skill_logo_6.png" alt="">
-                <p>Visual Studio Code</p>
+                <p>VS Code</p>
             </li>
             <li class="skills__tool">
                 <img src="assets/skill_logo_7.png" alt="">
@@ -219,7 +219,7 @@
 
 <!-- CONTACT ======================== -->
 
-    <footer class="contact">
+    <footer class="contact" id="contact">
         <div class="contact--left flex">    
             <div class="contact__wrapper">
                 <h3>Let's get in touch</h3>
@@ -274,12 +274,13 @@
     <!-- <script src="dev/scripts/smooth-scroll.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.js"></script>
     <script src="https://use.fontawesome.com/7a2cc63db2.js"></script>
-    <script>
+    <!-- <script>
         var scroll = new SmoothScroll('a[href*="#about"]', {
             speed: 5000,
             easing: 'easeInOutCubic'
             // header: '[.header--top]'
         });
-    </script>
+    </script> -->
+    <script src="public/scripts/main.js"></script>
 </body>
 </html>
