@@ -380,6 +380,12 @@ img {
   margin: 90px 90px 0 90px;
   padding: 50px;
   background: #fff9db; }
+  .skills h3 {
+    font-size: 30px;
+    text-align: center;
+    font-family: "Muli", sans-serif;
+    color: #5b5b5b;
+    margin-top: 0; }
 
 .skills__list {
   -ms-flex-wrap: wrap;
