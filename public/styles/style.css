@@ -377,12 +377,14 @@ img {
 
 .skills {
   margin: 90px 90px 0 90px;
-  background: #fff9db;
+  padding: 50px;
+  background: #fff9db; }
+
+.skills--right {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
-
-.skills--right .skills__tool {
-  width: calc(25% / 4); }
+  .skills--right .skills__tool {
+    width: calc(100% / 4); }
 
 .contact {
   margin: 90px;
