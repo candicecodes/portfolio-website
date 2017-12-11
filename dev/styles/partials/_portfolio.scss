@@ -23,7 +23,32 @@
             height: 2px;
             width: 60px;
             position: absolute;
-            bottom: 0;
+            bottom: -5px;
+        }
+    }
+    .portfolio--description {
+        margin-left: 20px;
+        ul {
+            padding: 0;
+        }
+        p {
+            font-family: $secondaryFont;
+        }
+    }
+    .portfolio--image {
+        margin-right: 20px
+    }
+    
+    &:nth-child(2) {
+        .portfolio--description {
+            text-align: right;
+            margin-right: 20px;
+            h3::before {
+                right: 0;
+            }
+        }
+        .portfolio--image {
+            margin-left: 20px;
         }
     }
 }

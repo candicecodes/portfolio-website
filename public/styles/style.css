@@ -386,7 +386,22 @@ img {
       height: 2px;
       width: 60px;
       position: absolute;
-      bottom: 0; }
+      bottom: -5px; }
+  .portfolio__container .portfolio--description {
+    margin-left: 20px; }
+    .portfolio__container .portfolio--description ul {
+      padding: 0; }
+    .portfolio__container .portfolio--description p {
+      font-family: "Playfair Display", serif; }
+  .portfolio__container .portfolio--image {
+    margin-right: 20px; }
+  .portfolio__container:nth-child(2) .portfolio--description {
+    text-align: right;
+    margin-right: 20px; }
+    .portfolio__container:nth-child(2) .portfolio--description h3::before {
+      right: 0; }
+  .portfolio__container:nth-child(2) .portfolio--image {
+    margin-left: 20px; }
 
 .portfolio--description, .portfolio--image {
   width: 50%; }
@@ -401,6 +416,8 @@ img {
     font-family: "Muli", sans-serif;
     color: #5b5b5b;
     margin-top: 0; }
+  .skills ul {
+    padding: 0; }
 
 .skills__list {
   -ms-flex-wrap: wrap;
@@ -410,6 +427,9 @@ img {
           justify-content: space-between; }
   .skills__list .skills__tool {
     width: 25%; }
+    .skills__list .skills__tool img {
+      margin: 0 auto;
+      display: block; }
     .skills__list .skills__tool p {
       text-align: center;
       font-family: "Playfair Display", serif; }
