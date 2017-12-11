@@ -4,6 +4,11 @@
     display: flex;
     justify-content: center;
     position: fixed;
+    h2 {
+        transform: rotate(270deg);
+        position: absolute;
+        top: 40%;
+    }
 
 }
 
@@ -112,10 +117,18 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        h3 {
-            padding-right: 80px;
+        h1 {
+            position: relative;
         }
+        h1::before {
+            content: '';
+            background: black;
+            height: 2px;
+            width:100%;
+            bottom: -10px;
+            position: absolute;
+        }
+        
     }
     .header--right {
         background: url("../../assets/header_right.png");

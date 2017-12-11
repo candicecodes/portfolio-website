@@ -33,6 +33,10 @@
     display: flex;
 }
 
+.content__wrapper {
+    margin: 0 auto;
+}
+
 // COLOURS ===========================
 
 $fontColour: #5b5b5b;
@@ -41,6 +45,7 @@ $portfolioSection: #d3ffee;
 $contactSection: #d3ffee;
 $contactSectionTwo: #8affe1;
 $octagonOrange: #ffae77;
+$formColour: #48F2D3;
 
 // $portfolioSection: #ecfbff;
 

@@ -5,12 +5,30 @@
     display: flex;
     input, button, textarea {
         border: none;
-        border-bottom: 2px solid #48F2D3;
+        border-bottom: 2px solid $formColour;
+        // border-bottom: 2px solid $contactSectionTwo;
         background: $aboutSection;
         display: block;
         width: 100%;
         // margin: 10px auto;
         margin-bottom: 20px;
+        font-family: $secondaryFont;
+    }
+    input, textarea {
+        border-top: 2px solid transparent;
+        border-right: 2px solid transparent;
+        border-left: 2px solid transparent;
+        padding-left: 4px;
+    }
+    
+    input::placeholder, textarea::placeholder:focus {
+          color: fontColour;
+          font-family: $secondaryFont;
+    }
+    
+    input:focus:placeholder-shown, textarea:focus:placeholder-shown {
+        outline: none;
+        border: 2px solid $formColour;
     }
     h3 {
         color: $fontColour;
@@ -36,17 +54,18 @@
         justify-content: center;
         p {
             display: inline;
+            font-family: $secondaryFont;
         }
         h3 {
-            margin-top: 80px;
+            margin-top: 50px;
         }
     }
     .contact--right--location, .contact--right--email {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     .contact--right--connect {
-        margin-top: 70px;
+        margin-top: 190px;
         display: block;
     }
 
@@ -57,8 +76,7 @@
 }
 
 .social {
-    justify-content: center;
-    margin-top: 30px;
+    margin-top: 10px;
     :not(:last-child) {
         margin-right:20px;
     }
@@ -69,17 +87,28 @@
     justify-content: center;
     align-items: center;
     i {
-        font-size: 30px;
+        font-size: 40px;
         color: $octagonOrange;
+        transition: all .2s ease-in-out;
+        &:hover {
+            color: $formColour;
+        }
     }
     
 }
 
 .contact--left {
     button {
-        background: #48F2D3;
-        border: none;
+        // background: #48F2D3;
+        border: 2px solid $formColour;
         text-transform: uppercase;
         padding: 10px 40px;
+        margin: 10px auto 50px auto;
+        width: auto;
+        font-family: $primaryFont;
+        transition: all .2s ease-in-out;
+        &:hover {
+            background: $formColour;
+        }
     }
 }
