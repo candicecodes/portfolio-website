@@ -408,7 +408,7 @@ img {
 
 .skills {
   margin: 90px 90px 0 90px;
-  padding: 50px;
+  padding: 50px 50px 0 50px;
   background: #fff9db; }
   .skills h3 {
     font-size: 30px;
@@ -429,10 +429,12 @@ img {
     width: 25%; }
     .skills__list .skills__tool img {
       margin: 0 auto;
-      display: block; }
+      display: block;
+      width: 60px; }
     .skills__list .skills__tool p {
       text-align: center;
-      font-family: "Playfair Display", serif; }
+      font-family: "Playfair Display", serif;
+      margin-bottom: 50px; }
 
 .contact {
   margin: 90px;

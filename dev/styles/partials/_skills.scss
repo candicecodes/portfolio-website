@@ -1,6 +1,6 @@
 .skills {
     margin: 90px 90px 0 90px;
-    padding: 50px;
+    padding: 50px 50px 0 50px;
     background: $skillsSection;
     h3 {
         font-size: 30px;
@@ -24,10 +24,12 @@
         img {
             margin: 0 auto;
             display: block;
+            width: 60px;
         }
         p {
             text-align: center;
             font-family: $secondaryFont;
+            margin-bottom: 50px;
         }
     }
 
