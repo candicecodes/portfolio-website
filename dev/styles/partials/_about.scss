@@ -16,11 +16,22 @@
         width: 50%;
     }
     .about--right {
+        padding-right: 100px;
+        justify-content: center;
+        flex-direction: column;
         h3 {
             margin-top: 100px;
+            font-family: $primaryFont;
+            color: $fontColour;
         }
         p {
             margin-bottom: 100px;
+            font-family: $secondaryFont;
+            font-size: 14px;
+            line-height: 2;
+        }
+        .about--wrapper {
+            margin: 0 auto;
         }
     }
     // .about--left {

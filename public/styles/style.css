@@ -361,10 +361,26 @@ img {
   background: #dbfaff; }
   .about--inner .about--left, .about--inner .about--right {
     width: 50%; }
-  .about--inner .about--right h3 {
-    margin-top: 100px; }
-  .about--inner .about--right p {
-    margin-bottom: 100px; }
+  .about--inner .about--right {
+    padding-right: 100px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .about--inner .about--right h3 {
+      margin-top: 100px;
+      font-family: "Muli", sans-serif;
+      color: #5b5b5b; }
+    .about--inner .about--right p {
+      margin-bottom: 100px;
+      font-family: "Playfair Display", serif;
+      font-size: 14px;
+      line-height: 2; }
+    .about--inner .about--right .about--wrapper {
+      margin: 0 auto; }
 
 .portfolio {
   margin: 90px 90px 0 90px;
