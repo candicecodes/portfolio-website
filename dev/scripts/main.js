@@ -5,34 +5,16 @@ $(function() {
         offset: 90    
     });
 
-    // var scroll = new SmoothScroll('a[href*="#portfolio"]', {
-    //     speed: 1000,
-    //     easing: 'easeInOutCubic',
-    //     offset: 90
-    // });
+    // const homeSection = $('#home').offset().top;
+    // const aboutSection = $('#about').offset().top - 95;
+    // const portfolioSection = $('#portfolio').offset().top - 95;
+    // const skillsSection = $('#skills').offset().top - 95;
+    // const contactSection = $('#contact').offset().top - 300;
 
-    // var scroll = new SmoothScroll('a[href*="#skills"]', {
-    //     speed: 1000,
-    //     easing: 'easeInOutCubic',
-    //     offset: 90
-    // });
-
-    // var scroll = new SmoothScroll('a[href*="#contact"]', {
-    //     speed: 1000,
-    //     easing: 'easeInOutCubic',
-    //     offset: 90
-    // });
-
-    const homeSection = $('#home').offset().top;
-    const aboutSection = $('#about').offset().top - 95;
-    const portfolioSection = $('#portfolio').offset().top - 95;
-    const skillsSection = $('#skills').offset().top - 95;
-    const contactSection = $('#contact').offset().top - 300;
-
-    console.log(aboutSection);
-    console.log(portfolioSection);
-    console.log(skillsSection);
-    console.log(contactSection);
+    // console.log(aboutSection);
+    // console.log(portfolioSection);
+    // console.log(skillsSection);
+    // console.log(contactSection);
 
     // let homeSectionTop = $('#home').offset().top;
     // let aboutSectionTop = $('#about').offset().top;
@@ -54,6 +36,12 @@ $(function() {
     //         $('#sectionName').text('About');
     //     }
     // });
+
+    const homeSection = $("#home").offset().top - $(window).height() / 2;
+    const aboutSection = $("#about").offset().top - $(window).height() / 2;
+    const portfolioSection = $("#portfolio").offset().top - $(window).height() / 2;
+    const skillsSection = $("#skills").offset().top - $(window).height() / 2;
+    const contactSection = $("#contact").offset().top - $(window).height() / 2;
 
     $(document).scroll(function() {
         let scrollPosition = $(document).scrollTop();

@@ -30,6 +30,12 @@
         margin-left: 20px;
         ul {
             padding: 0;
+            display: flex;
+            // justify-content: space-between;
+            flex-wrap: wrap;
+            li {
+                margin: 10px;
+            }
         }
         p {
             font-family: $secondaryFont;

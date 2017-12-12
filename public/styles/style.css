@@ -184,7 +184,9 @@ img {
     -webkit-transform: rotate(270deg);
             transform: rotate(270deg);
     position: absolute;
-    top: 40%; }
+    top: 30%;
+    font-family: "Muli", sans-serif;
+    color: #5b5b5b; }
 
 .header--top {
   display: -webkit-box;
@@ -390,7 +392,14 @@ img {
   .portfolio__container .portfolio--description {
     margin-left: 20px; }
     .portfolio__container .portfolio--description ul {
-      padding: 0; }
+      padding: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      .portfolio__container .portfolio--description ul li {
+        margin: 10px; }
     .portfolio__container .portfolio--description p {
       font-family: "Playfair Display", serif; }
   .portfolio__container .portfolio--image {
