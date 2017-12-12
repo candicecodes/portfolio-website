@@ -202,7 +202,15 @@ img {
   z-index: 1;
   top: 0; }
   .header--top img {
-    margin: 20px; }
+    margin: 10px; }
+  .header--top .logo {
+    width: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
 
 .topNav {
   display: -webkit-box;
@@ -426,7 +434,7 @@ img {
       font-family: "Muli", sans-serif; }
       .portfolio__container .portfolio--description ul li {
         margin: 10px 20px 10px 0;
-        border: 2px solid #48F2D3;
+        background: rgba(72, 242, 211, 0.3);
         padding: 5px; }
     .portfolio__container .portfolio--description p {
       font-family: "Playfair Display", serif; }
@@ -586,6 +594,8 @@ img {
 @media (max-width: 900px) {
   .about img {
     max-width: 75%; }
+  .about--inner .about--right {
+    padding-right: 40px; }
   .portfolio__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -609,3 +619,53 @@ img {
               order: 2; }
   .portfolio__container:nth-child(2) .portfolio--description h3::before {
     left: 0; } }
+
+@media (max-width: 768px) {
+  .aside {
+    display: none; }
+  .header--right {
+    display: none; }
+  .header--inner .header--left {
+    width: 100%; }
+  .about--inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .about--inner .about--right, .about--inner .about--left {
+      width: 100%; }
+  .about--inner .about--right {
+    padding-right: 0; }
+    .about--inner .about--right .about--wrapper {
+      margin: 0 50px; }
+    .about--inner .about--right h3 {
+      margin-top: 0; }
+    .about--inner .about--right p {
+      margin-bottom: 50px; }
+  .about img {
+    margin: 50px auto; }
+  .portfolio__container:nth-child(2) .portfolio--image {
+    margin-left: 0; }
+  .portfolio__container:nth-child(2) .portfolio--description ul, .portfolio__container .portfolio--description ul {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .skills__list .skills__tool {
+    width: 33%; }
+  .contact {
+    margin: 50px 50px 90px 50px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .contact .contact--left, .contact .contact--right {
+      width: 100%; }
+    .contact .contact--right h3 {
+      margin-top: 25px;
+      text-align: center; }
+    .contact .contact--left button {
+      margin: 10px auto 25px auto; }
+    .contact .contact--right--connect {
+      margin: 50px; }
+  .skills {
+    margin: 50px 50px 0 50px; } }

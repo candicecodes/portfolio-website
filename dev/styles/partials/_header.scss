@@ -24,7 +24,12 @@
     z-index: 1;
     top: 0;
     img {
-        margin: 20px;
+        margin: 10px;
+    }
+    .logo {
+        width: 70px;
+        display: flex;
+        align-items: center;
     }
 }
 
