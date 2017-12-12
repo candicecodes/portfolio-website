@@ -1,7 +1,8 @@
 .about img {
     max-width: 50%;
     display: block;
-    margin: 0 auto;
+    margin: 20px auto;
+    border: 2px solid white;
 }
 
 // .about {
@@ -34,13 +35,7 @@
             margin: 0 auto;
         }
     }
-    // .about--left {
-    //     position: relative;
-    //     img {
-    //         position: absolute;
-    //         bottom: 0;
-    //         left: 50%;
-    //         transform: translateX(-50%);
-    //     }
-    // }
+    .about--left {
+        align-items: center;
+    }
 }

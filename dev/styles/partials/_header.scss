@@ -9,7 +9,8 @@
         position: absolute;
         top: 30%;
         font-family: $primaryFont;
-        color: $fontColour;
+        color: lighten($fontColour, 30);
+        font-size: 20px;
     }
 
 }

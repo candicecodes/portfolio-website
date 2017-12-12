@@ -31,10 +31,13 @@
         ul {
             padding: 0;
             display: flex;
-            // justify-content: space-between;
+            justify-content: flex-start;
             flex-wrap: wrap;
+            font-family: $primaryFont;
             li {
-                margin: 10px;
+                margin: 10px 20px 10px 0;
+                border: 2px solid $formColour;
+                padding: 5px;
             }
         }
         p {
@@ -42,7 +45,9 @@
         }
     }
     .portfolio--image {
-        margin-right: 20px
+        margin-right: 20px;
+        display: flex;        
+        align-items: center;
     }
     
     &:nth-child(2) {
@@ -51,6 +56,12 @@
             margin-right: 20px;
             h3::before {
                 right: 0;
+            }
+            ul {
+                justify-content: flex-end;
+                li:last-child {
+                    margin-right: 0;
+                }
             }
         }
         .portfolio--image {
