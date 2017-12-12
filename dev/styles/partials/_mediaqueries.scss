@@ -1,0 +1,28 @@
+@media (max-width: 900px) {
+    .about img {
+        max-width: 75%;
+    }
+    .portfolio__container {
+        flex-direction: column;
+        .portfolio--image, .portfolio--description {
+            width: 100%;
+        }
+        &:nth-child(2) .portfolio--description, .portfolio--description {
+            ul {
+                justify-content: space-between;
+            }
+            h3, p {
+                text-align: left;
+            }
+        }
+        .porfolio--image {
+            order: 1;
+        }
+        .portfolio--description {
+            order: 2;
+        }        
+    }
+    .portfolio__container:nth-child(2) .portfolio--description h3::before {
+            left: 0;
+    }
+}

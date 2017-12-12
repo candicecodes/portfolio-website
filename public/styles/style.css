@@ -582,3 +582,30 @@ img {
   transition: all .2s ease-in-out; }
   .contact--left button:hover {
     background: #48F2D3; }
+
+@media (max-width: 900px) {
+  .about img {
+    max-width: 75%; }
+  .portfolio__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .portfolio__container .portfolio--image, .portfolio__container .portfolio--description {
+      width: 100%; }
+    .portfolio__container:nth-child(2) .portfolio--description ul, .portfolio__container .portfolio--description ul {
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+    .portfolio__container:nth-child(2) .portfolio--description h3, .portfolio__container:nth-child(2) .portfolio--description p, .portfolio__container .portfolio--description h3, .portfolio__container .portfolio--description p {
+      text-align: left; }
+    .portfolio__container .porfolio--image {
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1; }
+    .portfolio__container .portfolio--description {
+      -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+              order: 2; }
+  .portfolio__container:nth-child(2) .portfolio--description h3::before {
+    left: 0; } }
