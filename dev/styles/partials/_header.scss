@@ -25,12 +25,40 @@
     top: 0;
     img {
         margin: 10px;
+        z-index: 2;
     }
     .logo {
         width: 70px;
         display: flex;
         align-items: center;
     }
+}
+
+.mobileNav {
+    position: absolute;
+    padding: 10px 0 0 0;
+    margin: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    // top: 10px;
+    text-align: center;
+    width: 100%;
+    text-align: center;
+    background: darkcyan;
+    text-transform: uppercase;
+    font-family: $primaryFont;
+    li {
+        margin-bottom: 14px;
+        a {
+            color: $fontColour;
+        }
+    }
+}
+
+.hamburgerMenu {
+    position: absolute;
+    right: 40px;
+    top: 43px;
 }
 
 .topNav {

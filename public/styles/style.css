@@ -202,7 +202,8 @@ img {
   z-index: 1;
   top: 0; }
   .header--top img {
-    margin: 10px; }
+    margin: 10px;
+    z-index: 2; }
   .header--top .logo {
     width: 70px;
     display: -webkit-box;
@@ -211,6 +212,26 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+
+.mobileNav {
+  position: absolute;
+  padding: 10px 0 0 0;
+  margin: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: center;
+  width: 100%;
+  text-align: center;
+  background: darkcyan;
+  text-transform: uppercase; }
+  .mobileNav li {
+    margin-bottom: 10px; }
+
+.hamburgerMenu {
+  position: absolute;
+  right: 40px;
+  top: 43px; }
 
 .topNav {
   display: -webkit-box;
@@ -623,15 +644,21 @@ img {
 @media (max-width: 768px) {
   .aside {
     display: none; }
+  .topNav ul li:last-child {
+    margin-right: 20px; }
   .header--right {
     display: none; }
   .header--inner .header--left {
     width: 100%; }
+  .header--inner {
+    width: calc(100% - 100px);
+    margin: 90px auto 50px auto; }
   .about--inner {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+    margin: 0 50px; }
     .about--inner .about--right, .about--inner .about--left {
       width: 100%; }
   .about--inner .about--right {
@@ -668,4 +695,6 @@ img {
     .contact .contact--right--connect {
       margin: 50px; }
   .skills {
+    margin: 50px 50px 0 50px; }
+  .portfolio {
     margin: 50px 50px 0 50px; } }

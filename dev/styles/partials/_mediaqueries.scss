@@ -34,14 +34,22 @@
     .aside {
         display: none;
     }
+    .topNav ul li:last-child {
+        margin-right: 20px;
+    }
     .header--right {
         display: none;
     }
     .header--inner .header--left {
         width: 100%;
     }
+    .header--inner {
+        width: calc(100% - 100px);
+        margin: 90px auto 50px auto;
+    }
     .about--inner {
         flex-direction: column;
+        margin: 0 50px;
         .about--right, .about--left {
             width: 100%;
         }
@@ -94,3 +102,7 @@
         margin: 50px 50px 0 50px;
     }
 }
+
+// @media (max-width: 480px) {
+
+// }
