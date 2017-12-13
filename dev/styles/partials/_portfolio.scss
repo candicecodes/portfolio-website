@@ -7,7 +7,6 @@
 }
 
 .portfolio__container {
-    // border: 1px solid pink;
     display: flex;
     &:not(:last-child) {
         margin-bottom: 30px;
@@ -17,6 +16,7 @@
         color: $fontColour;
         font-size: 24px;
         position: relative;
+        margin-top: 0;
         &::before {
             content: '';
             background: $formColour;
@@ -25,6 +25,16 @@
             position: absolute;
             bottom: -5px;
         }
+    }
+    a {
+        text-transform: uppercase;
+        font-family: $primaryFont;
+        border: 2px solid $formColour;
+        padding: 5px;
+        color: black;
+    }
+    a:first-child {
+        margin-right: 10px;
     }
     .portfolio--description {
         margin-left: 20px;

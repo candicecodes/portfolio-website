@@ -59,4 +59,9 @@ $(function () {
             $('#sectionName').text('Contact');
         }
     });
+
+    // $('ul.mobileNav a').on('click', function () {
+
+    //     $('input[type="checkbox"]').attr('checked', false);
+    // });
 });

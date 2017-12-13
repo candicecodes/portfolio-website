@@ -214,24 +214,13 @@ img {
             align-items: center; }
 
 .mobileNav {
-  position: absolute;
-  padding: 10px 0 0 0;
-  margin: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  text-align: center;
-  width: 100%;
-  text-align: center;
-  background: darkcyan;
-  text-transform: uppercase; }
-  .mobileNav li {
-    margin-bottom: 10px; }
+  display: none; }
 
 .hamburgerMenu {
-  position: absolute;
-  right: 40px;
-  top: 43px; }
+  display: none; }
+
+#toggle {
+  display: none; }
 
 .topNav {
   display: -webkit-box;
@@ -432,7 +421,8 @@ img {
     font-family: "Muli", sans-serif;
     color: #5b5b5b;
     font-size: 24px;
-    position: relative; }
+    position: relative;
+    margin-top: 0; }
     .portfolio__container h3::before {
       content: '';
       background: #48F2D3;
@@ -440,6 +430,12 @@ img {
       width: 60px;
       position: absolute;
       bottom: -5px; }
+  .portfolio__container a {
+    text-transform: uppercase;
+    font-family: "Muli", sans-serif;
+    border: 2px solid #48F2D3;
+    padding: 5px;
+    color: black; }
   .portfolio__container .portfolio--description {
     margin-left: 20px; }
     .portfolio__container .portfolio--description ul {
@@ -698,3 +694,38 @@ img {
     margin: 50px 50px 0 50px; }
   .portfolio {
     margin: 50px 50px 0 50px; } }
+
+@media (max-width: 480px) {
+  .hamburgerMenu {
+    display: block;
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    z-index: 2; }
+  .exit {
+    z-index: 2; }
+  .topNav {
+    display: none; }
+  #toggle:checked ~ .mobileNav {
+    display: block;
+    position: absolute;
+    padding: 10px 0 0 0;
+    margin: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+    text-align: center;
+    background: white;
+    text-transform: uppercase;
+    font-family: "Muli", sans-serif; }
+    #toggle:checked ~ .mobileNav li {
+      margin-bottom: 14px;
+      position: relative; }
+      #toggle:checked ~ .mobileNav li a {
+        color: #5b5b5b;
+        -webkit-transition: all 1s ease-in-out;
+        transition: all 1s ease-in-out; }
+        #toggle:checked ~ .mobileNav li a:hover {
+          color: #48F2D3; } }
