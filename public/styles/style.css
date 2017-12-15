@@ -731,4 +731,14 @@ img {
         -webkit-transition: all 1s ease-in-out;
         transition: all 1s ease-in-out; }
         #toggle:checked ~ .mobileNav li a:hover {
-          color: #48F2D3; } }
+          color: #48F2D3; }
+  .about--inner {
+    margin: 0 10px; }
+  .portfolio {
+    margin: 50px 10px 0 10px; }
+  .skills {
+    margin: 50px 10px 0 10px; }
+  .skills__list .skills__tool {
+    width: 50%; }
+  .contact {
+    margin: 50px 10px 50px 10px; } }

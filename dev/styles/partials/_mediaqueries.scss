@@ -125,31 +125,45 @@
     }
 
     #toggle:checked ~ .mobileNav {
-            display: block;            
-            position: absolute;
-            padding: 10px 0 0 0;
-            margin: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            text-align: center;
-            width: 100%;
-            text-align: center;
-            background: white;
-            text-transform: uppercase;
-            font-family: $primaryFont;
-            li {
-            margin-bottom: 14px;
-            position: relative;
-                a {
-                    color: $fontColour;
-                    transition: all 1s ease-in-out;
-                    &:hover {
-                        color: $formColour;
-                    }
+        display: block;            
+        position: absolute;
+        padding: 10px 0 0 0;
+        margin: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        width: 100%;
+        text-align: center;
+        background: white;
+        text-transform: uppercase;
+        font-family: $primaryFont;
+        li {
+        margin-bottom: 14px;
+        position: relative;
+            a {
+                color: $fontColour;
+                transition: all 1s ease-in-out;
+                &:hover {
+                    color: $formColour;
                 }
-            }        
+            }
+        }        
     }
-    
+    .about--inner {
+        margin: 0 10px;
+    }
+    .portfolio {
+        margin: 50px 10px 0 10px;
+    }
+    .skills {
+        margin: 50px 10px 0 10px;
+    }
+    .skills__list .skills__tool {
+        width: 50%;
+    }
+    .contact {
+        margin: 50px 10px 50px 10px;
+    }
 }
 
 
