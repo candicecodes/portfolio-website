@@ -702,8 +702,6 @@ img {
     right: 40px;
     top: 20px;
     z-index: 2; }
-  .exit {
-    z-index: 2; }
   .topNav {
     display: none; }
   #toggle:checked ~ .mobileNav {

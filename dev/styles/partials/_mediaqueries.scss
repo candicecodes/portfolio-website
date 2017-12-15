@@ -114,9 +114,7 @@
         top: 20px;
         z-index: 2;
     }
-    .exit {
-        z-index: 2;
-    }
+    
     
     .topNav {
         display: none;
@@ -126,8 +124,7 @@
     // input[type=checkbox]:checked + label {
     // input#toggle:checked {
         
-            display: block;
-            
+            display: block;            
             position: absolute;
             padding: 10px 0 0 0;
             margin: 0;
