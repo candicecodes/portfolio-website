@@ -735,7 +735,16 @@ img {
   .about--inner {
     margin: 0 10px; }
   .portfolio {
-    margin: 50px 10px 0 10px; }
+    margin: 50px 10px 0 10px;
+    padding: 50px 10px 50px 10px; }
+  .portfolio__container .portfolio--description {
+    padding-right: 30px;
+    font-size: 14px; }
+  .portfolio__container:nth-child(2) .portfolio--description {
+    text-align: left; }
+  .portfolio__container a {
+    display: inline-block;
+    margin-bottom: 10px; }
   .skills {
     margin: 50px 10px 0 10px; }
   .skills__list .skills__tool {
