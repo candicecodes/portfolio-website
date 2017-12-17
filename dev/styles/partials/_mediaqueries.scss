@@ -112,7 +112,7 @@
     .hamburgerMenu {
         display: block;
         position: absolute;
-        right: 40px;
+        right: 20px;
         top: 20px;
         z-index: 2;
     }
@@ -175,7 +175,10 @@
         width: 50%;
     }
     .contact {
-        margin: 50px 10px 50px 10px;
+        margin: 50px 10px 80px 10px;
+    }
+    .credit {
+        bottom: -80px;
     }
 }
 
@@ -192,5 +195,8 @@
     }
     .contact .contact--right--connect {
         margin: 50px 40px;
+    }
+    .credit {
+        bottom: -100px;
     }
 }
