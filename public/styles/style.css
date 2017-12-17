@@ -746,8 +746,20 @@ img {
     display: inline-block;
     margin-bottom: 10px; }
   .skills {
-    margin: 50px 10px 0 10px; }
+    margin: 50px 10px 0 10px;
+    padding: 50px 10px 0 10px; }
   .skills__list .skills__tool {
     width: 50%; }
   .contact {
     margin: 50px 10px 50px 10px; } }
+
+@media (max-width: 320px) {
+  .about--inner .about--right .about--wrapper {
+    margin: 0 20px; }
+  .contact .contact__wrapper {
+    margin: 0 auto;
+    padding: 0 20px; }
+  .header .content__wrapper {
+    padding: 0 40px; }
+  .contact .contact--right--connect {
+    margin: 50px 40px; } }

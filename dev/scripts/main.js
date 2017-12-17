@@ -66,4 +66,6 @@ $(function() {
     //     $('input[type="checkbox"]').attr('checked', false);
     // });
 
+    //on click of hamburger menu, display the mobileNav and change the class hamburgerMenu to somehow display an x instead of menu icon
+
 });

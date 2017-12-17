@@ -179,4 +179,18 @@
     }
 }
 
-
+@media (max-width: 320px) {
+    .about--inner .about--right .about--wrapper {
+        margin: 0 20px;
+    }    
+    .contact .contact__wrapper {
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    .header .content__wrapper {
+        padding: 0 40px;
+    }
+    .contact .contact--right--connect {
+        margin: 50px 40px;
+    }
+}
