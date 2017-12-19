@@ -7,6 +7,8 @@ $(function () {
         offset: 90
     });
 
+    new WOW().init();
+
     // const homeSection = $('#home').offset().top;
     // const aboutSection = $('#about').offset().top - 95;
     // const portfolioSection = $('#portfolio').offset().top - 95;
