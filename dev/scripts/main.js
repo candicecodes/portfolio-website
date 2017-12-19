@@ -45,6 +45,7 @@ $(function() {
     const skillsSection = $("#skills").offset().top - $(window).height() / 2;
     const contactSection = $("#contact").offset().top - $(window).height() / 2;
 
+    
     $(document).scroll(function() {
         let scrollPosition = $(document).scrollTop();
         if(scrollPosition >= homeSection && scrollPosition < aboutSection) {
@@ -55,12 +56,13 @@ $(function() {
             $('#sectionName').text('Portfolio');
         } else if (scrollPosition >= skillsSection && scrollPosition < contactSection) {
             $('#sectionName').text('Skills');
-         
+        
         } else if (scrollPosition >= contactSection) {
             $('#sectionName').text('Contact');
         }
 
     });
+    
 
     
     // $('ul.mobileNav a').on('click', function () {
@@ -69,5 +71,9 @@ $(function() {
     // });
 
     //on click of hamburger menu, display the mobileNav and change the class hamburgerMenu to somehow display an x instead of menu icon
+
+    $('.hamburgerMenu').on('click', function() {
+        $('i').toggleClass('hide');
+    });
 
 });
