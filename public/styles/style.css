@@ -161,9 +161,6 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 .content__wrapper {
   margin: 0 auto; }
 
-.hamburgerMenu .hide {
-  display: none; }
-
 li {
   list-style-type: none; }
 
@@ -220,6 +217,9 @@ img {
   display: none; }
 
 .hamburgerMenu {
+  display: none; }
+
+.hamburgerMenu .hide {
   display: none; }
 
 #toggle {
