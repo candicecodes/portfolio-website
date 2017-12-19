@@ -292,6 +292,10 @@ img {
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
 
+.menuToggle input:checked ~ ul {
+  -webkit-transform: none;
+          transform: none; }
+
 .topNav {
   display: -webkit-box;
   display: -ms-flexbox;

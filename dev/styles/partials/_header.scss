@@ -128,6 +128,12 @@ position: absolute;
 }
 
 
+//don't know if I need below piece of code
+.menuToggle input:checked ~ ul {
+  transform: none;
+}
+
+
 .topNav {
     display: flex;
     font-family: $primaryFont;
