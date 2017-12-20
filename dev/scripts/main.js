@@ -73,7 +73,15 @@ $(function() {
     //on click of hamburger menu, display the mobileNav and change the class hamburgerMenu to somehow display an x instead of menu icon
 
     $('.hamburgerMenu').on('click touchstart vclick', function() {
-        $('i').toggleClass('hide');
+        const target = $(this).children();
+        // $('i').toggleClass('hide');
+        if($(target).hasClass('fa-bars')) {
+            $(target).removeClass('fa-bars');
+            $(target).addClass('fa-times');
+        } else {
+            $(target).removeClass('fa-times');
+            $(target).addClass('fa-bars');
+        }
     });
    
 
