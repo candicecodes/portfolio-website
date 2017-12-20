@@ -83,6 +83,8 @@ $(function() {
             $(target).addClass('fa-bars');
         }
     });
+
+    
    
 
 });
