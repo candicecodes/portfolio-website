@@ -69,7 +69,10 @@ $(function () {
 
     //on click of hamburger menu, display the mobileNav and change the class hamburgerMenu to somehow display an x instead of menu icon
 
-    $('.hamburgerMenu').on('click touchstart vclick', function () {
+    //removed touchstart
+
+    $('.hamburgerMenu').on('click vclick', function () {
+        // e.preventDefault();
         var target = $(this).children();
         // $('i').toggleClass('hide');
         if ($(target).hasClass('fa-bars')) {
