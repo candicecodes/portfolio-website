@@ -439,7 +439,11 @@ img {
     font-family: "Muli", sans-serif;
     border: 2px solid #48F2D3;
     padding: 5px;
-    color: black; }
+    color: black;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out; }
+    .portfolio__container a:hover {
+      background: #48F2D3; }
   .portfolio__container .portfolio--description {
     margin-left: 20px; }
     .portfolio__container .portfolio--description ul {
