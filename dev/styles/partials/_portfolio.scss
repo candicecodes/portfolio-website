@@ -1,5 +1,4 @@
 .portfolio {
-    // border: 1px solid blue;
     margin: 90px 90px 0 90px;
     background: $portfolioSection;
     padding: 50px;
@@ -64,7 +63,7 @@
         align-items: center;
     }
     
-    &:nth-child(2) {
+    &:nth-child(2n) {
         .portfolio--description {
             text-align: right;
             margin-right: 20px;

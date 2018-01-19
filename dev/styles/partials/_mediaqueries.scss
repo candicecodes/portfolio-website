@@ -7,10 +7,14 @@
     }
     .portfolio__container {
         flex-direction: column;
+        &:not(:first-child) {
+            margin-top: 50px;
+        }
         .portfolio--image, .portfolio--description {
             width: 100%;
         }
-        &:nth-child(2) .portfolio--description, .portfolio--description {
+        &:nth-child(2n) .portfolio--description, .portfolio--description {
+            text-align: left;
             ul {
                 justify-content: space-between;
             }
@@ -25,7 +29,7 @@
             order: 2;
         }        
     }
-    .portfolio__container:nth-child(2) .portfolio--description h3::before {
+    .portfolio__container:nth-child(2n) .portfolio--description h3::before {
             left: 0;
     }
 }
@@ -70,10 +74,10 @@
     .about img {
         margin: 50px auto;
     }
-    .portfolio__container:nth-child(2) .portfolio--image {
+    .portfolio__container:nth-child(2n) .portfolio--image {
         margin-left: 0;
     }
-    .portfolio__container:nth-child(2) .portfolio--description ul, .portfolio__container .portfolio--description ul {
+    .portfolio__container:nth-child(2n) .portfolio--description ul, .portfolio__container .portfolio--description ul {
         justify-content: flex-start;
     }
     .skills__list .skills__tool {
@@ -160,7 +164,7 @@
         padding-right: 30px;
         font-size: 14px;
     }
-    .portfolio__container:nth-child(2) .portfolio--description {
+    .portfolio__container:nth-child(2n) .portfolio--description {
         text-align: left;
     }
     .portfolio__container a {

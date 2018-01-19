@@ -15,19 +15,16 @@
 
 <!-- HEADER =========================== -->
 
-    <header class="header" id="home">
-        
-        <!-- remove navWrapper? -->
-        <!-- possiblly move navs outside of header since they need to be fixed? -->
+    <header class="header" id="home">        
             <div class="header--top">
                 <div class="logo">
-                    <img src="../../assets/cm_logo_2.png" alt="">
+                    <!-- <img src="../../assets/cm_logo_2.png" alt=""> -->
+                    <img src="assets/cm_logo_2.png" alt="">
                 </div>
 
                 <input type="checkbox" id="toggle" name="toggle">
                 <label for="toggle" class="hamburgerMenu">
                     <i class="fa fa-bars" aria-hidden="true"></i>
-                    <!-- <i class="fa fa-times hide" aria-hidden="true"></i> -->
                 </label>
                 <ul class="mobileNav">
                     <li>
@@ -43,25 +40,6 @@
                         <a href="#contact">Contact</a>
                     </li>
                 </ul>
-
-
-
-                <!-- <div class="menuToggle">
-                    <input type="checkbox" id="toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <ul class="mobileNav">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-
-                </div> -->
-
-
-
                 <nav class="topNav">
                     <ul>
                         <li><a href="#about">About</a></li>
@@ -94,13 +72,12 @@
                            </li>
                        </ul>
                    </nav>
-
             </div>
             
             <div class="header--inner">
                 <div class="header--left">
-                    <div class="content__wrapper wow slideInLeft">
-                        <h1 class="wow slideInLeft">Candice Mayes</h1>
+                    <div class="content__wrapper wow fadeInUp">
+                        <h1 class="wow fadeInUp">Candice Mayes</h1>
                         <h3>Web developer</h3>
                     </div>
                 </div>
@@ -189,6 +166,25 @@
                 <a href="https://project6-d54a3.firebaseapp.com/" target="_blank">View live</a>
                 <a href="https://github.com/candicecodes/project-six" target="_blank">View on github</a>
             </div>            
+        </div>
+        <div class="portfolio__container">
+            <div class="portfolio--description wow slideInLeft">
+                <h3>Voracious</h3>
+                <p>A web application built using React that suggests restaurants based on the food type and location that the user inputs.
+                    Restaurants are pulled dynamically using the Yelp API.</p>
+                <ul>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>Responsive</li>
+                </ul>
+                <a href="http://candicemayes.com/voracious/" target="_blank">View live</a>
+                <a href="https://github.com/candicecodes/yelp-voracious" target="_blank">View on github</a>
+            </div>
+            <div class="portfolio--image wow slideInRight">
+                <img src="assets/project_4.png" alt="An example of a responsive website made based on a PSD">
+            </div>
         </div>
     </section>
 
